@@ -16,7 +16,6 @@ df['Item_Fat_Content'] = df['Item_Fat_Content'].replace(['reg'],'Regular')
 #using mean to fill these numeric values....
 
 df['Item_Weight'].fillna((df['Item_Weight'].mean()), inplace=True)
-
 #using some builtinfutions to fill ordinal attriutes...
 
 dist = df.Outlet_Size.value_counts(normalize=True)
